@@ -72,6 +72,7 @@ h1 ~ article {
         max-width: 100%;   /* full width on mobile */
         padding: 10px;
     }
+
 }
 
 /* === Post Header (avatar + date) === */
@@ -138,13 +139,125 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    margin-left: auto;      /* pushes it to the right */
     cursor: pointer;
     transition: 0.2s ease;
-    margin-right: 30px;     /* spacing from scrollbar */
 }
 
 /* Hover animation for profile picture */
 .nav-profile:hover {
     transform: scale(1.1);
+}
+
+/* Selects the last child of the navbar that is the profile picture */
+/* Profile icon styling to make it appear at the right side*/
+.navbar > a:last-child {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+/* === Login page styling === */
+/*  Grey login rectangle/card for Login form */
+.login-card {
+    width: 305px;
+    min-height: 335px;
+    padding: 18px 25px 20px;
+    background: #d9d9d9;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Welcome heading */
+.login-card h1 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Create account styling */
+.account-link {
+    display: inline-block; /* Changes box type so we can move it better */
+    margin-bottom: 12px; /* Without inline-block it wouldnt be the same */
+    color: #00aeea;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account-link:hover {
+    text-decoration: underline;
+}
+
+/* "or" text */
+.login-or {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+/* "Please log in" text */
+.login-prompt {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+/* Login form */
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form fields */
+.form-field {
+    margin-bottom: 10px;
+}
+
+
+/* Visually hide labels */
+.form-field label {
+    display: none;
+}
+
+/* Email and password boxes */
+.form-field input {
+    width: 133px;
+    height: 37px;
+    padding: 6px;
+    border: none;
+    background: white;
+    font-size: 16px;
+}
+
+/* Placeholder text */
+.form-field input::placeholder {
+    color: #bdbdbd;
+}
+
+
+/* Login button */
+.login-card button {
+    padding: 7px 14px;
+    margin-top: 4px;
+    background: #07558f;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #063f69;
+}
+
+/* Forgot password */
+.forgot-link {
+    display: inline-block;
+    margin-top: 17px;
+    color: #00aeea;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
 }
