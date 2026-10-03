@@ -1,67 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>PostIt - Log In</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Header + Navigation -->
-    <header>
-      <nav class="navbar">
-        <a href="index.html" class="nav-item">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <title>PostIt - Log In</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <a href="login.html">
-          <img src="images/profile.png" alt="Profile" class="nav-profile" />
-        </a>
-      </nav>
-    </header>
+<body>
+  <!-- Header + Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="addPost.html" class="nav-item">Add Post</a>
 
-    <!-- Main login content -->
-    <main>
-      <article class="login-card">
-        <h1>Welcome to PostIt</h1>
 
-        <a href="#" class="account-link">Create an account</a>
+      <a href="login.html">
+        <img src="images/profile.png" alt="Profile" class="nav-profile" />
+      </a>
+    </nav>
+  </header>
 
-        <p class="login-or">or</p>
-        <p class="login-prompt">Please log in</p>
+  <!-- Main login content -->
+  <main>
+    <article class="login-card">
+      <h1>Welcome to PostIt</h1>
 
-        <form action="index.html" method="get">
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              autocomplete="email"
-              required
-            />
-          </div>
+      <a href="#" class="account-link">Create an account</a>
 
-          <div class="form-field">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
-              autocomplete="current-password"
-              required
-            />
-          </div>
-          <button type="submit">Log in</button>
-        </form>
+      <p class="login-or">or</p>
+      <p class="login-prompt">Please log in</p>
 
-        <a href="#" class="forgot-link">Forget password</a>
-      </article>
-    </main>
+      <form action="index.html" method="get">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required />
+        </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; Made by Team BC — Homework 1</p>
-    </footer>
-  </body>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password"
+            required />
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+
+      <a href="#" class="forgot-link">Forget password</a>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Made by Team BC — Homework 1</p>
+  </footer>
+</body>
+
 </html>
