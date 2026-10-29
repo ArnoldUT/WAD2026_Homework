@@ -1,101 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>PostIt – Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-
-<!-- Header + Navigation bar -->
-<header>
-    <nav class="navbar">
+  <body>
+    <!-- Header + Navigation bar -->
+    <header>
+      <nav class="navbar">
         <!-- Navigation links -->
         <a href="index.html" class="nav-item">Home</a>
         <a href="addPost.html" class="nav-item">Add Post</a>
 
         <!-- Profile picture in the top bar, links to login page -->
         <a href="login.html">
-            <img src="images/profile.png" alt="Profile" class="nav-profile">
+          <img src="images/profile.png" alt="Profile" class="nav-profile" />
         </a>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Main content area -->
-<main>
-    <h1>All Posts</h1>
+    <!-- Main content area -->
+    <main>
+      <h1>All Posts</h1>
 
-    <!-- Post with photo -->
-    <article class="post">
-        <!-- Post header: avatar + date -->
-        <div class="post-header">
-            <img src="images/profile.png" alt="User icon" class="avatar">
-            <h2>Sep 23, 2026</h2>
-        </div>
+      <div id="posts-container"></div>
+    </main>
 
-        <!-- Post image -->
-        <img src="images/tartu.jpg" alt="Tartu 2024" class="post-photo">
+    <script src="js/script.js"></script>
 
-        <!-- Post text -->
-        <p>Tartu, our favorite city!</p>
-
-        <!-- Like icon -->
-        <img src="images/like.png" alt="Like icon" class="like-icon">
-    </article>
-
-    <!-- Post without photo -->
-    <article class="post">
-        <div class="post-header">
-            <img src="images/profile.png" alt="User icon" class="avatar">
-            <h2>Sep 23, 2026</h2>
-        </div>
-
-        <p>Reminder: Homework!</p>
-        <img src="images/like.png" alt="Like icon" class="like-icon">
-    </article>
-
-    <!-- Post with photo -->
-    <article class="post">
-        <div class="post-header">
-            <img src="images/profile.png" alt="User icon" class="avatar">
-            <h2>Sep 17, 2026</h2>
-        </div>
-
-        <img src="images/delta.jpg" alt="Delta building" class="post-photo">
-        <p>This is our study building!</p>
-        <img src="images/like.png" alt="Like icon" class="like-icon">
-    </article>
-
-    <!-- Post without photo -->
-    <article class="post">
-        <div class="post-header">
-            <img src="images/profile.png" alt="User icon" class="avatar">
-            <h2>Sep 10, 2026</h2>
-        </div>
-
-        <p>Reminder: Sign up for the optional course to fulfill the degree requirements!</p>
-        <img src="images/like.png" alt="Like icon" class="like-icon">
-    </article>
-
-    <!-- Post with photo -->
-    <article class="post">
-        <div class="post-header">
-            <img src="images/profile.png" alt="User icon" class="avatar">
-            <h2>Sep 5, 2026</h2>
-        </div>
-
-        <img src="images/konsum.jpg" alt="Konsum store" class="post-photo">
-        <p>I visit this store very frequently!</p>
-        <img src="images/like.png" alt="Like icon" class="like-icon">
-    </article>
-
-</main>
-
-<!-- Footer -->
-<footer>
-    <p>Made by Team BC — Homework 1</p>
-</footer>
-
-</body>
+    <!-- Footer -->
+    <footer>
+      <p>Made by Team BC — Homework 1</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "date": "Sep 23, 2026",
+      "text": "Tartu, our favorite city!",
+      "image": "images/tartu.jpg"
+    },
+    {
+      "id": 2,
+      "date": "Sep 23, 2026",
+      "text": "Reminder: Homework!",
+      "image": null
+    },
+    {
+      "id": 3,
+      "date": "Sep 17, 2026",
+      "text": "This is our study building!",
+      "image": "images/delta.jpg"
+    },
+    {
+      "id": 4,
+      "date": "Sep 10, 2026",
+      "text": "Reminder: Sign up for the optional course to fulfill the degree requirements!",
+      "image": null
+    },
+    {
+      "id": 5,
+      "date": "Sep 5, 2026",
+      "text": "I visit this store very frequently!",
+      "image": "images/konsum.jpg"
+    }
+  ]
+}

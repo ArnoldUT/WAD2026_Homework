@@ -1,51 +1,61 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PostIt - Create post</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>PostIt - Create post</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- Header + Navigation bar -->
+    <header>
+      <nav class="navbar">
+        <!-- Navigation links -->
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="addPost.html" class="nav-item">Add Post</a>
 
-<body>
-  <!-- Header + Navigation bar -->
-  <header>
-    <nav class="navbar">
-      <!-- Navigation links -->
-      <a href="index.html" class="nav-item">Home</a>
-      <a href="addPost.html" class="nav-item">Add Post</a>
+        <!-- Profile picture in the top bar, links to login page -->
+        <a href="login.html">
+          <img src="images/profile.png" alt="Profile" class="nav-profile" />
+        </a>
+      </nav>
+    </header>
 
-      <!-- Profile picture in the top bar, links to login page -->
-      <a href="login.html">
-        <img src="images/profile.png" alt="Profile" class="nav-profile">
-      </a>
-    </nav>
-  </header>
+    <!-- Add post content -->
+    <main>
+      <article class="create-post-card">
+        <form action="index.html">
+          <div class="form-row">
+            <label for="post-body">Post body</label>
+            <textarea
+              id="post-body"
+              name="post-body"
+              placeholder="textarea"
+              required
+            ></textarea>
+          </div>
 
-  <!-- Add post content -->
-  <main>
-    <article class="create-post-card">
-      <form action="index.html">
-        <div class="form-row">
-          <label for="post-body">Post body</label>
-          <textarea id="post-body" name="post-body" placeholder="textarea" required></textarea>
-        </div>
+          <div class="form-row image-upload-field">
+            <label for="file-upload">Select file</label>
+            <label for="file-upload" class="upload-file-button"
+              >Choose File</label
+            >
+            <input
+              type="file"
+              id="file-upload"
+              name="file-upload"
+              class="hidden-file-input"
+            />
+          </div>
 
-        <div class="form-row image-upload-field">
-          <label for="file-upload">Select file</label>
-          <label for="file-upload" class="upload-file-button">Choose File</label>
-          <input type="file" id="file-upload" name="file-upload" class="hidden-file-input">
-        </div>
+          <button type="submit" class="post-submit">Create post</button>
+        </form>
+      </article>
+    </main>
 
-        <button type="submit" class="post-submit">Create post</button>
-      </form>
-    </article>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; Made by Team BC — Homework 1</p>
-  </footer>
-</body>
-
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Made by Team BC — Homework 1</p>
+    </footer>
+  </body>
 </html>
