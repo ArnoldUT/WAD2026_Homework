@@ -1,4 +1,4 @@
-﻿# WAD2026_Homework_1
+﻿# WAD2026_Homework
 
 ## Authors
 The project authors are:
