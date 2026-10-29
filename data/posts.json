@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 10,
+      "date": "Oct 15, 2026",
+      "text": "Grabbed a coffee near Delta before the programming lab session.",
+      "image": "images/kohvik.jpg"
+    },
+    {
+      "id": 9,
+      "date": "Oct 12, 2026",
+      "text": "The Town Hall Square is one of my favorite places in Tartu.",
+      "image": "images/raekojaplats.jpg"
+    },
+    {
+      "id": 8,
+      "date": "Oct 8, 2026",
+      "text": "Spent the afternoon studying in the University of Tartu library.",
+      "image": "images/raamatukogu.jpg"
+    },
+    {
+      "id": 7,
+      "date": "Oct 5, 2026",
+      "text": "The view from Toomemägi never gets old, especially during autumn.",
+      "image": "images/toomemagi.jpg"
+    },
+    {
+      "id": 6,
+      "date": "Oct 2, 2026",
+      "text": "A walk along the Emajõgi is always a good way to relax after lectures.",
+      "image": "images/emajogi.jpg"
+    },
+    {
+      "id": 1,
+      "date": "Sep 23, 2026",
+      "text": "Tartu, our favorite city!",
+      "image": "images/tartu.jpg"
+    },
+    {
+      "id": 2,
+      "date": "Sep 23, 2026",
+      "text": "Reminder: Homework!",
+      "image": null
+    },
+    {
+      "id": 3,
+      "date": "Sep 17, 2026",
+      "text": "This is our study building!",
+      "image": "images/delta.jpg"
+    },
+    {
+      "id": 4,
+      "date": "Sep 10, 2026",
+      "text": "Reminder: Sign up for the optional course to fulfill the degree requirements!",
+      "image": null
+    },
+    {
+      "id": 5,
+      "date": "Sep 5, 2026",
+      "text": "I visit this store very frequently!",
+      "image": "images/konsum.jpg"
+    }
+  ]
+}
