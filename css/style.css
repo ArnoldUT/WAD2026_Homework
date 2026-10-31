@@ -132,8 +132,21 @@ footer {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-/* === Profile Picture in Navbar === */
-/* Profile icon aligned to the right */
+/* === Profile Menu === */
+.profile-menu {
+  position: relative;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.profile-trigger {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .nav-profile {
   width: 35px;
   height: 35px;
@@ -147,11 +160,42 @@ footer {
   transform: scale(1.1);
 }
 
-/* Selects the last child of the navbar that is the profile picture */
-/* Profile icon styling to make it appear at the right side*/
-.navbar > a:last-child {
-  margin-left: auto;
-  margin-right: 30px;
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  width: min(140px, calc(100vw - 64px));
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #d6d6d6;
+  text-align: left;
+}
+
+.profile-dropdown[hidden] {
+  display: none;
+}
+
+.profile-name,
+.profile-email {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.profile-name {
+  font-weight: normal;
+}
+
+.profile-action {
+  width: 100%;
+  margin-top: 0;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  color: #222;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
 }
 
 /* === Login page styling === */

@@ -13,9 +13,16 @@
         <a href="index.html" class="nav-item">Home</a>
         <a href="addPost.html" class="nav-item">Add Post</a>
 
-        <a href="login.html">
-          <img src="images/profile.png" alt="Profile" class="nav-profile" />
-        </a>
+        <div class="profile-menu">
+          <button type="button" class="profile-trigger" id="profile-trigger" aria-label="Open profile menu" aria-expanded="false" aria-controls="profile-dropdown">
+            <img src="images/profile.png" alt="" class="nav-profile" />
+          </button>
+          <div class="profile-dropdown" id="profile-dropdown" hidden>
+            <p class="profile-name" id="profile-name"></p>
+            <p class="profile-email" id="profile-email"></p>
+            <button type="button" class="profile-action" id="profile-action"></button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -29,7 +36,7 @@
         <p class="login-or">or</p>
         <p class="login-prompt">Please log in</p>
 
-        <form action="index.html" method="get">
+        <form id="login-form">
           <div class="form-field">
             <label for="email">Email</label>
             <input
@@ -64,5 +71,7 @@
     <footer>
       <p>&copy; Made by Team BC — Homework</p>
     </footer>
+    <script src="js/login.js"></script>
+    <script src="js/profile-menu.js"></script>
   </body>
 </html>
