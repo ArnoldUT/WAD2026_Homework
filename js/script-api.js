@@ -11,11 +11,18 @@ fetch("https://6ae348d1933120ae20f898d9.mockapi.io/posts")
       const article = document.createElement("article");
       article.classList.add("post");
 
+      // Convert all dates into the same format.
+      const formattedDate = new Date(post.date).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      });
+
       // Dynamically generate the HTML structure for each post.
       article.innerHTML = `
         <div class="post-header">
           <img src="images/profile.png" alt="User icon" class="avatar">
-          <h2>${post.date}</h2>
+          <h2>${formattedDate}</h2>
         </div>
 
         ${
