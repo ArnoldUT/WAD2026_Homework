@@ -14,3 +14,23 @@ Name(s): Arnold Grosberg, Andreas Rey Hõim, Magnus Moosar
 Valid and accessible link to the repository that contains your Project: https://github.com/ArnoldUT/WAD2026_Homework
 
 The link to the deployed project (GitHub page): https://arnoldut.github.io/WAD2026_Homework/index.html
+
+## Project setup
+Make sure to have Node installed: https://courses.cs.ut.ee/2026/WAD/fall/Main/PS08-1html
+
+```
+npm install
+```
+
+### Compiles for development
+```
+npm run dev
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
