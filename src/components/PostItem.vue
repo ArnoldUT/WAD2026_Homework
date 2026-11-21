@@ -1,8 +1,16 @@
 <template>
-  <div class="post">
+  <article v-if="post" class="post">
     <h3>{{ post.author }}</h3>
 
     <h4>{{ post.title }}</h4>
+
+    <img
+      v-if="post.imageUrl"
+      class="post-image"
+      :src="post.imageUrl"
+      :alt="post.imageAlt || `${post.title} image`"
+      loading="lazy"
+    />
 
     <p>{{ post.content }}</p>
 
@@ -13,7 +21,7 @@
 
       <span>{{ post.likes }} Likes</span>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -59,6 +67,15 @@ export default {
 
 .post h4 {
   margin-bottom: 10px;
+}
+
+.post-image {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  margin: 0 0 16px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .post-actions {
